@@ -15,4 +15,6 @@ RUN curl -L  $(curl -s  https://api.github.com/repos/JumpLao/OnlineJudgeFE/relea
     unzip dist.zip && \
     rm dist.zip
 
+# ADD ../OnlineJudgeFE/dist /app/dist
+
 ENTRYPOINT /app/deploy/entrypoint.sh
